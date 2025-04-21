@@ -1,0 +1,58 @@
+:root {
+    --white-color: #ffffff;
+    --white-1-color: #eeeeee;
+    --white-2-color: #dddddd;
+    --white-3-color: #cccccc;
+    --dark-1-color: #a5a5a5;
+    --dark-2-color: #595959;
+    --dark-3-color: #4b4b4b;
+    --dark-4-color: #343434;
+    --black-color: #000000;
+
+    --primary-font: "Pretendard Variable";
+    --font-default: 10px;
+    --body-font-size: 1.6rem;
+    --body-font-weight: 400;
+}
+
+html {
+    font-family: var(--primary-font);
+    font-size: var(--font-default);
+}
+
+body.dark {
+    background-color: var(--black-color);
+    font-family: var(--primary-font);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--white-color);
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: var(--primary-font);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    color: var(--black-color);
+}
+
+.hidden {
+    overflow: hidden;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    font-size: 0;
+}
+
+.blind {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%); 
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+}
