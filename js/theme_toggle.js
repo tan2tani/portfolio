@@ -1,4 +1,4 @@
-const btn = document.getElementById('theme_toggle');
+const btn = document.getElementById('btn_theme');
 const img = btn.querySelector('img');
 
 btn.addEventListener('click', () => {

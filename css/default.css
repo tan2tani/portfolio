@@ -20,7 +20,14 @@ html {
     font-size: var(--font-default);
 }
 
-body.dark {
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--black-color);
+        color: var(--white-color);
+    }
+}
+
+body.theme_dark {
     background-color: var(--black-color);
     font-family: var(--primary-font);
     font-size: var(--body-font-size);
@@ -34,6 +41,7 @@ body {
     font-size: var(--body-font-size);
     font-weight: var(--body-font-weight);
     color: var(--black-color);
+    transition: .25s;
 }
 
 .hidden {
