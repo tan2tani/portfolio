@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/theme_toggle.js"></script>
     <script src="js/btn.js"></script>
 </head>
 
-<body>
+<body class="">
     <header id="header" class="header">
         <nav class="navbar">
             <div class="nav_container">
@@ -26,10 +25,10 @@
 
     <aside class="btn">
         <button type="button" class="btn_theme">
-            <img class="theme_icon" src="assets/images/icons/light_mode_icon.svg" alt="다크 모드 전환">
+            <img class="theme_icon" src="assets/images/icons/light_mode_icon.svg" data-light="assets/images/icons/light_mode_icon.svg" data-dark="assets/images/icons/dark_mode_icon.svg" alt="다크 모드 전환">
         </button>
         <button type="button" class="btn_top" aria-label="페이지 최상단으로 이동">
-            <img class="top_icon" src="assets/images/icons/top_icon.svg" alt="" aria-hidden="true">
+            <img class="top_icon" src="assets/images/icons/top_icon.svg" data-light="assets/images/icons/top_icon.svg" data-dark="assets/images/icons/dark_mode_top_icon.svg" alt="" aria-hidden="true">
         </button>
     </aside>
 
@@ -53,7 +52,7 @@
             <div class="tip_boxed">
                 <span class="scroll_tip">Scroll Down</span>
                 <div class="icon_boxed">
-                    <img class="scroll_icon" src="assets/images/icons/scroll_icon.svg" alt="스크롤 이미지">
+                    <img class="scroll_icon" src="assets/images/icons/scroll_icon.svg" data-light="assets/images/icons/scroll_icon.svg" data-dark="assets/images/icons/dark_mode_scroll_icon.svg" alt="스크롤 이미지">
                 </div>
             </div>
         </section>
@@ -118,49 +117,49 @@
                         <ul class="profile_category">
                             <li class="profile_item">
                                 <span class="skill_icon">
-                                    <img class="html5_icon" src="assets/images/icons/html5_icon.svg" alt="" aria-hidden="true">
+                                    <img class="html5_icon" src="assets/images/icons/html5_icon.svg" data-light="assets/images/icons/html5_icon.svg" data-dark="assets/images/icons/dark_mode_html5_icon.svg" alt="" aria-hidden="true">
                                 </span>
                                 <span class="skill_name">HTML5</span>
                                 <span class="skill_desc">(시멘틱, 웹 접근성(ARIA), 구조 설계 가능)</span>
                             </li>
                             <li class="profile_item">
                                 <span class="skill_icon">
-                                    <img class="css3_icon" src="assets/images/icons/css3_icon.svg" alt="" aria-hidden="true">
+                                    <img class="css3_icon" src="assets/images/icons/css3_icon.svg" data-light="assets/images/icons/css3_icon.svg" data-dark="assets/images/icons/dark_mode_css3_icon.svg" alt="" aria-hidden="true">
                                 </span>
                                 <span class="skill_name">CSS3</span>
                                 <span class="skill_desc">(반응형 디자인 가능)</span>
                             </li>
                             <li class="profile_item">
                                 <span class="skill_icon">
-                                    <img class="javascript_icon" src="assets/images/icons/javascript_icon.svg" alt="" aria-hidden="true">
+                                    <img class="javascript_icon" src="assets/images/icons/javascript_icon.svg" data-light="assets/images/icons/javascript_icon.svg" data-dark="assets/images/icons/dark_mode_javascript_icon.svg" alt="" aria-hidden="true">
                                 </span>
                                 <span class="skill_name">JavaScript</span>
                                 <span class="skill_desc">(간단한 이벤트 처리 가능)</span>
                             </li>
                             <li class="profile_item">
                                 <span class="skill_icon">
-                                    <img class="jquery_icon" src="assets/images/icons/jquery_icon.svg" alt="" aria-hidden="true">
+                                    <img class="jquery_icon" src="assets/images/icons/jquery_icon.svg" data-light="assets/images/icons/jquery_icon.svg" data-dark="assets/images/icons/dark_mode_jquery_icon.svg" alt="" aria-hidden="true">
                                 </span>
                                 <span class="skill_name">jQuery</span>
                                 <span class="skill_desc">(DOM 조작 가능)</span>
                             </li>
                             <li class="profile_item">
                                 <span class="skill_icon">
-                                    <img class="figma_icon" src="assets/images/icons/figma_icon.svg" alt="" aria-hidden="true">
+                                    <img class="figma_icon" src="assets/images/icons/figma_icon.svg" data-light="assets/images/icons/figma_icon.svg" data-dark="assets/images/icons/dark_mode_figma_icon.svg" alt="" aria-hidden="true">
                                 </span>
                                 <span class="skill_name">Figma</span>
                                 <span class="skill_desc">(웹 기획 및 프로토타입 제작 가능)</span>
                             </li>
                             <li class="profile_item">
                                 <span class="skill_icon">
-                                    <img class="photoshop_icon" src="assets/images/icons/adobe_photoshop_icon.svg" alt="" aria-hidden="true">
+                                    <img class="photoshop_icon" src="assets/images/icons/adobe_photoshop_icon.svg" data-light="assets/images/icons/adobe_photoshop_icon.svg" data-dark="assets/images/icons/dark_mode_adobe_photoshop_icon.svg" alt="" aria-hidden="true">
                                 </span>
                                 <span class="skill_name">Adobe Photoshop</span>
                                 <span class="skill_desc">(이미지 편집 및 포스터 제작 가능)</span>
                             </li>
                             <li class="profile_item" style="margin-bottom: 0 !important;">
                                 <span class="skill_icon">
-                                    <img class="illustrator_icon" src="assets/images/icons/adobe_illustrator_icon.svg" alt="" aria-hidden="true">
+                                    <img class="illustrator_icon" src="assets/images/icons/adobe_illustrator_icon.svg" data-light="assets/images/icons/adobe_illustrator_icon.svg" data-dark="assets/images/icons/dark_mode_adobe_illustrator_icon.svg" alt="" aria-hidden="true">
                                 </span>
                                 <span class="skill_name">Adobe Illustrator</span>
                                 <span class="skill_desc">(벡터 디자인 제작 가능)</span>
@@ -180,14 +179,14 @@
                         <img class="project_img" src="assets/images/items/_item.jpg" alt="개인 프로젝트 OOO 웹사이트 이미지">
                         <span class="img_link">View more</span>
                     </div>
-                    <div class="project_line"></div>
+                    <div class="project_line line_01"></div>
                     <div class="project_info">
                         <h3 class="project_name">Dummy text</h3>
                         <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="https://example.com/project" class="project_link" target="_blank" rel="noopener">
                             <span class="link_title">View more</span>
                             <span class="link_icon">
-                                <img src="assets/images/icons/link_icon.svg" alt="" aria-hidden="true">
+                                <img src="assets/images/icons/link_icon.svg" data-light="assets/images/icons/link_icon.svg" data-dark="assets/images/icons/dark_mode_link_icon.svg" alt="" aria-hidden="true">
                             </span>
                         </a>
                     </div>
@@ -197,14 +196,14 @@
                         <img class="project_img" src="assets/images/items/_item.jpg" alt="개인 프로젝트 OOO 웹사이트 이미지" >
                         <span class="img_link">View more</span>
                     </div>
-                    <div class="project_line"></div>
+                    <div class="project_line line_02"></div>
                     <div class="project_info">
                         <h3 class="project_name">Dummy text</h3>
                         <p class="project_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="https://example.com/project" class="project_link" target="_blank" rel="noopener">
                             <span class="link_title">View more</span>
                             <span class="link_icon">
-                                <img src="assets/images/icons/link_icon.svg" alt="" aria-hidden="true">
+                                <img src="assets/images/icons/link_icon.svg" data-light="assets/images/icons/link_icon.svg" data-dark="assets/images/icons/dark_mode_link_icon.svg" alt="" aria-hidden="true">
                             </span>
                         </a>
                     </div>
@@ -215,7 +214,7 @@
 
 
         <section class="contact">
-            <div class="contact_container">
+            <div class="contact_container"> 
                 <p class="aspiration">
                     I Grow Because I Dream,
                     I Develop Because I Try.

@@ -2,8 +2,20 @@
 $(function(){
     $(".btn_theme").click(function(){
         $("body").toggleClass("theme_dark");
+
+        const isDark = $("body").hasClass("theme_dark");
+
+        console.log("isDark:", isDark);
+
+        $("img[data-light][data-dark]").each(function(){
+            const $img = $(this);
+            const newSrc = isDark ? $img.data("dark") : $img.data("light");
+            $img.attr("src", newSrc);
+        });
+
+        
     });
-})
+});
 
 
 
