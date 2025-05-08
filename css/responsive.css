@@ -1,0 +1,59 @@
+/* 기본 (모바일) */
+@media (min-width: 340px) {
+
+}
+
+/* 태블릿 이상 */
+@media (min-width: 768px) and (max-width: 1080px) {
+    body {
+        letter-spacing: -.1rem;
+    }
+
+    .about_container {
+        display: inherit;
+        border-top: 1px solid var(--black-color);
+        border-bottom: 1px solid var(--black-color);
+    }
+
+    .section_boxed {
+        
+    }
+    
+    .slogan {
+        letter-spacing: -.2rem;
+    }
+
+    .pov {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: calc(70% + 3rem);
+        letter-spacing: -.15rem;
+    }
+    
+    .section_boxed {
+        text-align: center;
+    }
+
+    .section_title {
+        font-size: clamp(2.4rem, 5vw, 3.6rem);
+    }
+
+    .profile_title {
+        text-align: left;
+        letter-spacing: -.025rem;
+        border-bottom: 1px solid var(--black-2-color);
+        font-size: clamp(1.6rem, 2.4vw, 2.2rem);
+    }
+
+    .skill_name {
+        text-align: left;
+    }
+}
+
+/* 노트북 이상 */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .profile_item {
+        font-size: clamp(1.4rem, 1.1vw, 1.6rem);
+    }
+}
